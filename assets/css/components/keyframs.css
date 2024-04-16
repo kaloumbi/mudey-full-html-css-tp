@@ -1,0 +1,19 @@
+@keyframes myslideInFromLeftToRight{
+    from{
+        margin-left: -100%;
+    }
+    
+    to{
+        margin-left: 0%;
+    }
+}
+
+@keyframes myslideInFromRightToLeft{
+    from{
+        margin-left: 0%;
+    }
+
+    to{
+        margin-left: -100%;
+    }
+}

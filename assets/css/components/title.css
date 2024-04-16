@@ -1,0 +1,61 @@
+.section-title{
+    text-transform: uppercase;
+}
+
+.section-title h2{
+    display: flex;
+    gap: 10px;
+}
+
+
+/* ********** METTRE UN TIRET AVANT ET APRES LE H2 *************/
+.section-title h2::before,
+.section-title h2::after{
+    content: '';
+    flex: 1;
+    padding: 5px;
+    height: 0;
+    border-top: 1px solid var(--main-color-gray);
+    position: relative;
+    top: 20px;
+}
+
+
+/**************** MEDIA ****************/
+
+@media screen and (max-width: 992px) {
+    .section-title h2{
+        font-size: 1.2rem;
+    }
+
+    .section-title h2::before,
+    .section-title h2::after{
+        top: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+@media screen and (max-width: 427px) {
+    
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

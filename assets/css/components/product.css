@@ -1,0 +1,135 @@
+.featured-products .products-list{
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.product-item{
+    width: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: var(--main-color-white);
+}
+
+.product-item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.product-item .product-image{
+    height: 400px;
+}
+
+.product-item .product-image img{
+    height: 100%;
+}
+
+.product-category{
+    text-transform: uppercase;
+    color: var(--main-color-gray);
+}
+
+.product-details{
+    height: 18  0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name h3{
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.product-item .product-price h4{
+    margin-bottom: 0;
+}
+
+.product-item .product-price del{
+    color: var(--main-color-gray);
+}
+
+i.selected{
+    color: var(--main-color-orange );
+}
+
+.product-item .product-options button{
+    border: none;
+    background-color: var(--main-color-gray);
+    color: white;
+    height: 35px;
+}
+
+.product-item .product-options button:hover{
+    background-color: var(--main-color);
+    font-weight: bold;
+}
+
+span.badge{
+    left: 10px;
+    display: block;
+    width: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid var(--main-color-black);
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* l'élément se positionne en haut s'il y'a un seul élément et s'il y'a deux élements, le 2eme se positionne en-bas  */
+
+span.badge:nth-child(2){
+    top: 10px;
+}
+span.badge:nth-child(3){ 
+    top: 40px;
+}
+
+span.badge.sold{
+    background-color: var(--main-color-danger);
+    /* top: 10px; */
+}
+
+span.badge.hot{
+    background-color: var(--main-color-success);
+    /* top: 40px; */
+}
+
+
+
+
+
+/* MEDIA */
+
+@media screen and (max-width: 1200px) {
+    .new-arrivals-products .products-list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .products-list{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+@media screen and (max-width: 427px) {
+    .product-item{
+        width: 90%;
+    }
+} 
+
+
+
+
+
+
+
